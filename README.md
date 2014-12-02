@@ -1,6 +1,6 @@
 # Refactoring legacy code driven by tests - Kata
 
-This is a direct copy of the Ruby version of (Luca Minudel's kata)[https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples/tree/master/TDDMicroExercises], but with the tests converted to RSpec.
+This is a direct copy of the Ruby version of [Luca Minudel's kata](https://github.com/lucaminudel/TDDwithMockObjectsAndDesignPrinciples/tree/master/TDDMicroExercises), but with the tests converted to RSpec.
 
 ## Instructions
 
