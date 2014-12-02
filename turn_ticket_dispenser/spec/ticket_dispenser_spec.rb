@@ -1,10 +1,10 @@
 require "ticket_dispenser"
 
 describe TicketDispenser do
-  it "does something" do
-    td = TicketDispenser.new
-    td.get_turn_ticket
-    td.get_turn_ticket
-    td.get_turn_ticket
+  subject { described_class.new turn_number_generator: turn_number_generator }
+  let(:turn_number_generator) { double :turn_number_generator, call: 123 }
+
+  it "issues a ticket with the correct number" do
+    expect(subject.get_turn_ticket.turn_number).to eq 123
   end
 end

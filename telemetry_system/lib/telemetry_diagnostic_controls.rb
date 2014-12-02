@@ -4,8 +4,8 @@ class TelemetryDiagnosticControls
 
   attr_reader :diagnostic_info
 
-  def initialize 
-    @telemetry_client = TelemetryClient.new 
+  def initialize telemetry_client: TelemetryClient.new 
+    @telemetry_client = telemetry_client
     @diagnostic_info = ''
   end
 
@@ -27,6 +27,5 @@ class TelemetryDiagnosticControls
     @diagnostic_info = @telemetry_client.receive
   end
 
-private
   DIAGNOSTIC_CHANNEL_CONNECTION_STRING = '*111#'
 end
